@@ -18,7 +18,7 @@ void setup()
   //Timer/counter 1 is set to normal mode.
   TCCR1A = 0x00;
   TCCR1B = (1<<CS12) | (1<<CS10); //Prescaler: 1024
-  TIMSK1 |= (1<<TOIE1); //Overflow Interrupt is enables
+  TIMSK1 |= (1<<TOIE1); //Overflow Interrupt is enabled
   TCNT1 = 49910; 
   /*TCNT1 is set to this value so that the overflow interrupt 
     service routine is called in 1 second. */
